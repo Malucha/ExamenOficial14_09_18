@@ -28,6 +28,10 @@ public class Detalle_venta {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    public Detalle_venta() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public String getId_detalle_venta() {
         return id_detalle_venta;
     }
