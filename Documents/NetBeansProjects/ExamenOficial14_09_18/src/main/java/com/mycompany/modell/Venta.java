@@ -14,6 +14,10 @@ public class Venta {
         
     }
 
+    public void setId_venta(String id_venta) {
+        this.id_venta = id_venta;
+    }
+
     public String getId_venta() {
         return id_venta;
     }
@@ -88,5 +92,9 @@ public class Venta {
    
     
     String id_venta, fecha, concepto, igv, total,sub_total,id_cliente_direccion,id_vendedor;
+
+    
+
+    
     
 }

@@ -34,7 +34,7 @@ public class ProductoCtrlImpl implements ProductoDAO {
 
     @Override
     public ArrayList<Producto> readProducto() {
-        listDatos = new ArrayList<>();
+        listDatos = new ArrayList();
         sql = "SELECT * "
                 + "    FROM public.producto";
         rs = cx.executeQuery(sql);

@@ -34,7 +34,7 @@ public class Detalle_ventaCtrlImpl implements Detalle_ventaDAO {
 
     @Override
     public ArrayList<Detalle_venta> readDetalle_venta() {
-        listDatos = new ArrayList<>();
+        listDatos = new ArrayList();
         sql = "SELECT * "
                 + "    FROM public.detalle_venta";
         rs = cx.executeQuery(sql);
@@ -59,8 +59,8 @@ public class Detalle_ventaCtrlImpl implements Detalle_ventaDAO {
 
     @Override
     public boolean deleteDetalle_venta(String id_detalle_venta) {
-        sql = "DELETE public.producto "
-                + "WHERE id_producto = " + id_producto + " ";
+        sql = "DELETE public.detalle_venta "
+                + "WHERE id_detalle_venta = " + id_detalle_venta + " ";
         return cx.executeInsertUpdate(sql);
     }
 

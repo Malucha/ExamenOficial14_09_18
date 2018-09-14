@@ -37,7 +37,7 @@ public class VentaCtrlImpl implements VentaDAO {
 
     @Override
     public ArrayList<Venta> readVenta() {
-        listDatos = new ArrayList<>();
+        listDatos = new ArrayList();
         sql = "SELECT id_venta, fecha, concepto, igv, total,sub_total,id_cliente_direccion,id_vendedor"
                 + "    FROM public.venta";
         rs = cx.executeQuery(sql);
